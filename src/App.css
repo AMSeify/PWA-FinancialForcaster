@@ -1,0 +1,179 @@
+* {
+  font-family: "Vazirmatn", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  direction: ltr;
+  font-size: 1.2rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+.login-container {
+  height: 100vh;
+  overflow: hidden;
+}
+input:focus {
+  outline-width: 0;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+/* #################### DownBar ################### */
+.downbar {
+  position: fixed;
+  width: 100%;
+  height: 11vh;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+}
+.downbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.downbar-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.downbar-link svg {
+  font-size: 1.6rem;
+  color: white;
+}
+.downbar-link span {
+  color: white;
+}
+
+.downbar-link.active svg {
+  color: yellow;
+}
+.downbar-link.active span {
+  color: yellow;
+}
+/* #################### State Page ################### */
+
+.stats-container {
+  margin: 1% 25%;
+}
+/* #################### home Page ################### */
+.banner {
+  background-color: black;
+  color: yellow;
+  padding: 1.5rem 1rem;
+}
+.usage-container {
+  margin-top: 1.5rem;
+  padding: 0 0.5rem;
+}
+.usage-container h4 {
+  margin-bottom: 3rem;
+}
+.home-container {
+  margin: 0 25%;
+}
+/* #################### user Page ################### */
+
+.user-container {
+  display: flex;
+  height: 40vh;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-right: 0.5rem;
+  padding-top: 1.5rem;
+  margin: 0 25%;
+}
+.user-container svg {
+  color: gray;
+  font-size: 5rem;
+}
+.user-desc {
+  display: flex;
+  justify-content: space-between;
+}
+.avatar-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8rem;
+  margin-bottom: 3rem;
+  padding-right: 1rem;
+}
+.avatar-holder p {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+/* #################### buy Page ################### */
+.buy-page {
+  margin: 0 25%;
+}
+.buy-page h3 {
+  background-color: black;
+  color: yellow;
+  margin-bottom: 0;
+  padding: 1.5rem 1rem;
+}
+.buy-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  /* #################### State Page ################### */
+
+  .stats-container {
+    padding: 0 0.5rem;
+    margin: 0 0;
+    margin-bottom: 25%;
+  }
+  /* #################### home Page ################### */
+  .banner {
+    padding: 2rem 1rem;
+  }
+  .home-container {
+    margin: 0 0;
+  }
+  /* #################### user Page ################### */
+
+  .user-container {
+    margin: 0 0;
+  }
+
+  /* #################### buy Page ################### */
+  .buy-page {
+    margin: 0 0;
+    margin-bottom: 25%;
+  }
+  .buy-page h3 {
+    padding: 2rem 1rem;
+  }
+  .buy-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
